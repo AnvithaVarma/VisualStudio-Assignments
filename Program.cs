@@ -4,25 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace Ass1
+namespace Factorial
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int num;
-            Console.Write("Enter the number : ");
-            num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= 20; i++)
+            Console.WriteLine("Enter the Number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int fact=1,i;
+            for (i = 1; i <= num; i++)
+
+            fact = i * fact;
+            Console.WriteLine($"The factorial of the {num} is {fact}",num,fact);
+
+            if(fact%2==0)
             {
-                Console.WriteLine("{0}*{1}={2}", num, i, num * i);
+                Console.WriteLine("The given number is not prime ",fact);
+            }
+            else
+            {
+                Console.WriteLine("The given number is prime ",fact);
 
             }
+
             Console.ReadLine();
+
+
+
         }
-
-        
     }
-
 }
