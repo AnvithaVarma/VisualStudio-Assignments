@@ -4,32 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factorial
+namespace NaturalNum
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Number : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            int fact=1,i;
-            for (i = 1; i <= num; i++)
-
-            fact = i * fact;
-            Console.WriteLine($"The factorial of the {num} is {fact}",num,fact);
-
-            if(fact%2==0)
+            int i;
+            Console.WriteLine("The first ten natural numbers are : ");
+            for (i = 1; i <= 10; i++)
             {
-                Console.WriteLine("The given number is not prime ",fact);
-            }
-            else
-            {
-                Console.WriteLine("The given number is prime ",fact);
+               Console.WriteLine($"{+i}");
+                Console.WriteLine("\n");
 
             }
-
             Console.ReadLine();
-
 
 
         }
