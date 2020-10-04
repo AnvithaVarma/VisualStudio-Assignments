@@ -3,24 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
-namespace NaturalNum
+namespace File
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i;
-            Console.WriteLine("The first ten natural numbers are : ");
-            for (i = 1; i <= 10; i++)
-            {
-               Console.WriteLine($"{+i}");
-                Console.WriteLine("\n");
-
-            }
-            Console.ReadLine();
-
-
+            var WriteText = "Today class went awesome";
+            File.WriteAllText("sample.txt", WriteText); 
         }
     }
 }
