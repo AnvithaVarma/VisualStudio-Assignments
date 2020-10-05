@@ -29,7 +29,7 @@ namespace Stack
 
             MyStack.Pop();
             MyStack.Pop();
-          //  MyStack.Pop();
+            MyStack.Pop();
           //  MyStack.Pop();
            // MyStack.Pop();
            // MyStack.Pop();
@@ -40,7 +40,14 @@ namespace Stack
             }
 
             Console.WriteLine("The peek element of stack is :" + MyStack.Peek());
-            
+
+            Console.WriteLine("To check whether the element is present in stack or not :" + MyStack.Contains(3));
+            Console.WriteLine("To check whether the element is present in stack or not :" + MyStack.Contains(2));
+
+            Console.WriteLine("The number of element in stack are :" + MyStack.Count());
+
+
+
         }
     }
 }
