@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Patterns</title>
+</head>
+<body>
+
+    <script>
+        document.write("Start of the Pattern!" + "<br>");
+        
+       // var x = 1;
+        var i, j;
+        for (i = 1; i <=5; i++) {
+            for (j = 1; j <=5; j++) {
+                if (i == j || i == 1 && j == 5 || i == 2 && j == 4 || i == 4 && j == 2 || i == 5 && j == 1)
+           // if(j==x)
+                {
+                    document.write("*");
+                }
+            else
+                {
+                    document.write("&nbsp&nbsp");
+                }
+               
+            }
+           // x++;
+            document.write("<br>");
+        }
+        
+
+        document.write("<br>"+ "End of the Pattern!" );
+
+        document.write("<br>" + "Start of the second Pattern!" + "<br>");
+        for (var i = 1; i <= 5; i++) {
+           // document.write(" *    ");
+            for (var j = 1; j <=5; j++) {
+                if (i==1||i==5||j==1||j==5) 
+                    document.write("*");
+                else 
+                    document.write(" &nbsp    ");
+                }
+            document.write("<br>");
+            }
+        document.write("<br>" + "End of the second Pattern!");
+    </script>
+</body>
+</html>

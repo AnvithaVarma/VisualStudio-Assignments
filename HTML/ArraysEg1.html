@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        var marks = [41, 52, 73, 84, 45];
+        var max = 0;
+        var total = 0;
+        var average = 0;
+        var min = 100;
+        for (var i = 0; i < marks.length; i++) {
+            document.write("Marks are : " + marks[i] + "<br>");
+            if (min > marks[i]) {
+                min = marks[i];
+            }
+            else {
+                if (max < marks[i]) {
+                    max = marks[i];
+                }
+            }
+            total = total + marks[i];
+            average = total / 5;
+        }
+        //document.write("Marks are : " + marks[i] + "<br>");
+        document.write("Minimum marks scored are: " + max + "<br>");
+        document.write("Maximum marks scored are: " + min + "<br>");
+        document.write("Total Marks are : " + total + "<br>");
+        document.write("Average Marks are : " + average + "<br>");
+        //function f1() {
+        //    alert("Hello");
+        //    var x=document
+        //    Document.
+        //}
+
+    </script>
+    <!--<button onclick="f1()">Click Me</button>
+    <h1>This is h1</h1>
+    <h1>This is h1</h1>-->
+</body>
+</html>
