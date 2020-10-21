@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Events</title>
+</head>
+
+<body>
+    <script>
+        function Hi1(event) {
+            event.innerHTML = "Wooahhh!! See i changed:)";
+        }
+        function Hello1(event) {
+            event.innerHTML = "Wooahhh!! See i changed:)";
+        }
+        function Hi2(event) {
+            event.innerHTML = "Wooahhh!! See i changed:)";
+        }
+        function Hello2(event) {
+            event.innerHTML = "Wooahhh!! See i changed:)";
+        }
+        function Hello3(event) {
+            event.innerHTML = "Wooahhh!! See i changed:)";
+        }
+    </script>
+
+
+
+    <h1>Click on HelloWorld, it will display something new!</h1>
+    <h1 onclick="this.innerHTML='Welcome to js!!!!'">HelloWorld</h1>
+
+    <div onmouseover="Hi1(this)" style="background-color:chartreuse ;float:left;width:170px;height:200px;padding:40px; font-size:large ">
+        Put cursor on me and see the magic(mouse over)!
+    </div>
+    <div onmousedown="Hello1(this)" style="background-color:aqua ;float:left;width:170px;height:200px;padding:40px; font-size:large ">
+        click me and see the magic(mouse down)!
+    </div>
+    <div onmouseout="Hi2(this)" style="background-color:blueviolet ;float:left; width:170px;height:200px;padding:40px; font-size:large ">
+        Go out from my box and see the magic(mouse out)!
+    </div>
+    <div onmouseup="Hello2(this)" style="background-color:crimson ;float:left;width:170px;height:200px;padding:40px; font-size:large ">
+        click me and see the magic(mouse up)!
+    </div>
+    <div onmousemove="Hello3(this)" style="background-color:gold ;float:left;width:170px;height:200px;padding:40px; font-size:large ">
+       Put cursor on me and see the magic(mouse up)!
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Json Demo</title>
+</head>
+<body>
+    <h1>This is an example of creating object with json!</h1>
+    <p id="example"></p>
+
+    <script>
+        var x=" " ,y, text;
+        text = {
+            "MovieName": ["Bahubali", "Twilight", "Lucy"],
+            "Actor": ["Prabhas", "Robert Pattinson", "Scarlet Johanson"]
+        };
+       // x = text.MovieName[1];
+        // y = text.Actor[1];
+        for (y in text.Actor) {
+            x += text.Actor[y] + "<br>";
+        }
+        
+        for (y in text.MovieName) {
+            x +="<br>"+ text.MovieName[y];
+        }
+        document.getElementById("example").innerHTML = x;
+        document.getElementById("example").innerHTML = x;
+
+       // document.getElementById("example").innerHTML = y;
+
+    </script>
+</body>
+</html>

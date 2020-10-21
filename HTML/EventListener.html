@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>JS Event Listener</h1>
+    <p>EventListenerMethod with three clicks on single button!</p>
+    <button id="Black">Click Me</button>
+
+    <!--<button id="Red">Click Me</button>
+    <button id="White">Click Me</button>-->
+
+    <!-- u can use alert--> 
+
+    <script>
+        var x = document.getElementById("Black");
+        x.addEventListener("click", Hi);
+        var x = document.getElementById("Black");
+        x.addEventListener("click", Hello);
+        var x = document.getElementById("Black");
+        x.addEventListener("click", Hi1);
+        //var y = document.getElementById("Red");
+        //y.addEventListener("click", Hello);
+        //var z = document.getElementById("White");
+        //z.addEventListener("click", Hi1);
+
+
+        function Hi() {
+            alert("We are Intelligent!");
+        }
+        function Hello() {
+            alert("Event Listener Method is easy!");
+        }
+        function Hi1() {
+            alert("We are good to go!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+        <title>Window Object</title>
+</head >
+
+<body>
+    <p id="demo"> <b><i>This is demo of EventHandler on windows object</i></b></p>
+    <p> hi</p>
+
+    <button id="btn1" onclick="button1(this)">First Click Me!! </button>
+    <button id="btn2" onclick="button2(this)" disabled>Next, Click Me!!</button>
+    <button id="btn3" onclick="button3(this)" disabled> Try Me third!!</button>
+    <button id="btn4" onclick="button4(this)" disabled>Try Me once more!!</button>
+    <button id="btn5" onclick="button5(this)" disabled>At Last, Press Me!!</button>
+    
+    <script>
+        function button1() {
+            alert("I am named Anvitha");
+            document.getElementById("btn2").disabled = false;
+            document.getElementById("btn1").disabled = true;
+
+        }
+        function button2() {
+            alert("I am eagerly waiting to meet new people");
+            document.getElementById("btn3").disabled = false;
+            document.getElementById("btn2").disabled = true;
+
+        }
+        function button3() {
+            alert("I just want to work from my office and not from home! ");
+            document.getElementById("btn4").disabled = false;
+            document.getElementById("btn3").disabled = true;
+        }
+        function button4() {
+            alert("But, i dont want to leave my home!!!!");
+            document.getElementById("btn5").disabled = false;
+            document.getElementById("btn4").disabled = true;
+
+        }
+        function button5() {
+            alert("Now, All the buttons will be disabled!!!");
+            buttonid.disabled = false;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

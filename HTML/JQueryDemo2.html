@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <title>JQuery Demo2</title>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                //$("p").hide();
+                //$("h1").hide();
+                //$("h2").hide();
+                //$("h3").hide();
+                //$("h4").hide();
+               // $(this).hide();  //hides recent event
+              //  $("*").hide();     //hides all the events
+                $("p.intro").hide();
+                $("p").fadeIn();
+            });
+        });
+    </script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1 class="intro">I am h1</h1>
+    <h2>I am h2</h2>
+    <h3>I am h3</h3>
+    <h4>I am h4</h4>
+    <p class="intro">This is an example of jquery implemenattion</p>
+    <p>Hello to the world</p>
+    <button>Click me</button>
+    <div>
+
+    </div>
+</body>
+</html>

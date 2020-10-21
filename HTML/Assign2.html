@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment2</title>
+    
+    <style>
+        .change {
+            background-color: springgreen;
+            height: 250px;
+            width: 150px;
+        }
+        .change1 {
+            text-decoration-style: dotted;
+            font-style: italic;
+            background-color: springgreen;
+            height: 250px;
+            width: 150px;
+        }
+        .change2 {
+            border: 2px solid black;
+            text-decoration-style: dotted;
+            font-style:oblique;
+            background-color: springgreen;
+            height: 250px;
+            width: 150px;
+        }
+        .change3 {
+            font-family: cursive;
+            border: 2px solid black;
+            text-decoration-style: dotted;
+            font-style: italic;
+            background-color: springgreen;
+            height: 250px;
+            width: 150px;
+        }
+        .change4 {
+            
+            background-color: tomato;
+            font-family: cursive;
+            border: 2px solid black;
+            text-decoration-style: dotted;
+            font-style: italic;
+            height: 250px;
+            width: 150px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <button id="btn1" onclick="button1(this)">Press Me</button>
+    <button id="btn2" onclick="button2(this) "disabled>Press Me for the change in text style</button>
+    <button id="btn3" onclick="button3(this)"disabled>Click Me to add border</button>
+    <button id="btn4" onclick="button4(this)"disabled>Press Me for different font style!</button>
+    <button id="btn5" onclick="button5(this)"disabled>Click me for different background color!!</button>
+    <script>
+        function button1() {
+            alert("You have clicked button1");
+            document.getElementById("btn2").disabled = false;
+            document.getElementById("btn1").disabled = true;
+            document.getElementById("Hi").classList.add("change");
+        }
+        function button2() {
+            alert("You have clicked button2");
+            document.getElementById("btn3").disabled = false;
+            document.getElementById("btn2").disabled = true;
+            document.getElementById("Hi1").classList.add("change1");
+
+        }
+        function button3() {
+            alert("You have clicked button3");
+            document.getElementById("btn4").disabled = false;
+            document.getElementById("btn3").disabled = true;
+            document.getElementById("Hi2").classList.add("change2");
+
+        }
+        function button4() {
+            alert("You have clicked button4");
+            document.getElementById("btn5").disabled = false;
+            document.getElementById("btn4").disabled = true;
+            document.getElementById("Hi3").classList.add("change3");
+
+      
+        }
+        function button5() {
+            alert("You have clicked button5");
+            document.getElementById("Hi4").classList.add("change4");
+            buttonid.disabled = true;
+
+        }
+                        
+    </script>
+    <div id="Hi" style="float:left" ><h1><br />Hello World!</h1></div>
+    <div id="Hi1" style="float:left"><h2><br />Programming is Fun!</h2></div>
+    <div id="Hi2" style="float:left"><h3><br />Welcome to Java Script!</h3></div>
+    <div id="Hi3" style="float:left"><h4><br />Say hello to DOM!</h4></div>
+    <div id="Hi4" style="float:left"><h5><br />This is my Assignment!!!</h5></div>
+    <!--<h2 class="change1">Hello World!</h2>
+    <h3 class="change2">Hello World!</h3>
+    <h4 class="change3">Hello World!</h4>
+    <h5 class="change4">Hello World!</h5>-->
+</body>
+</html>
