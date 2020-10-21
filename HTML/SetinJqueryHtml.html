@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <title>Set Method</title>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#Hi").text("I am Anvitha");
+            });
+
+            $("#button2").click(function () {
+                $("#Hi1").html("<b><i>I am Anvitha</b></i>");
+            });
+
+            $("#button3").click(function () {
+                $("#Hi2").val("Anyeong!!!");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#button4").click(function () {
+                $("h1").append("This is something xtra!");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#button5").click(function () {
+                $("#Hi").prepend("  This is prepended text!");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#button6").click(function () {
+                $("#Hi").remove();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#button7").click(function () {
+                $("#Hi1").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="Hi"><b><i>Have you watched the film Twilight???</i></b></h1>
+    <h1 id="Hi1" style="background-color:gold;height:170px;width:150px"><b><i>Yes! I Love that movie:):)</i></b></h1>
+    <h1>Input field: <input type="text" id="Hi2" value="Hello" /> </h1>
+
+    <button id="button1">Click me to set the text!!</button>
+    <button id="button2">Click me to set the html code!!</button>
+    <button id="button3">Click me to set the value!!!</button><br /><br />
+
+    <button id="button4">Click me to append the text!!!</button>
+    <button id="button5">Click me to prepend the text!!!</button>
+    <button id="button6">Click me to delete the first heading!!!</button>
+    <button id="button7">Click me to empty the second heading!!!</button>
+
+
+</body>
+</html>

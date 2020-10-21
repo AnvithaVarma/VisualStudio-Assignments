@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <title>JQuery Html</title>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function(){
+                alert(" Text is: " + $("#Hi").text());
+            });
+        });
+        $(document).ready(function () {
+            $("#button2").click(function(){
+               alert("Html inside the text is : " + $("#Hi").html());
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="Hi"><b><i>Have you watched the film Twilight???</i></b></h1>
+
+    <button id="button1">Click me to see the text!!</button>
+    <button id="button2">Click me to see the html code!!</button>
+</body>
+</html>
