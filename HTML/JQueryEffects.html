@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <title>Jquery Effects</title>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn(2000);
+                $("#div3").fadeIn(3000);
+            });
+        });
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").fadeOut(1000);
+                $("#div2").fadeOut(2000);
+                $("#div3").fadeOut(3000);
+            });
+        });
+        $(document).ready(function () {
+            $("#button2").click(function () {
+                $("#div1").fadeToggle(1000);
+                $("#div2").fadeToggle(2000);
+                $("#div3").fadeToggle(3000);
+            });
+        });
+        $(document).ready(function () {
+            $("#button3").click(function () {
+                $("#div1").fadeTo("slow",0.45);
+                $("#div2").fadeTo("slow", 0.55);
+                $("#div3").fadeTo("slow", 0.55);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Different fade Effects!</h1>
+    <button>Click me to fade in</button><br /><br />
+    <button id="button1">Click me to fade out</button><br /><br />
+    <button id="button2">Click me to use fade toggle</button><br /><br />
+    <button id="button3">Click me to use fade to effect</button>
+
+    <div id="div1" style="background-color:deeppink;width:150px;height:100px;display:none "></div><br />
+    <div id="div2" style="background-color:mediumslateblue;width:150px;height:100px;display:none "></div><br />
+    <div id="div3" style="background-color:olive ;width:150px;height:100px;display:none "></div>
+
+
+</body>
+</html>
