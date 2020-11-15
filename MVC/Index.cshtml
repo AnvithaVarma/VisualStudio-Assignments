@@ -1,0 +1,68 @@
+﻿@Model practisingMVC.Models.student
+@{ 
+    ViewBag.Title = "index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h3>Student Details</h3>
+        <hr />
+        @Html.ValidationSummary(true," ", new { @class="text-danger"})
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes, new { @class="control-label col-mid2"})
+            <div class="col-md-10">
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@{
+        ViewBag.Title = "Home Page";
+}
+
+<h2>
+    @{
+        Response.Write(DateTime.Now.ToString("T"));
+    }
+</h2>
+<div class="jumbotron">
+    <h1>Welcome</h1>
+    <p class="lead">I delted the old info.!!!</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Hello Everyone</h2>
+        <p>
+            This is a paragraph!!!1
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
