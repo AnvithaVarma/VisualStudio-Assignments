@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index Page</title>
+    @RenderSection("headSection",required:false)
+</head>
+<body>
+    <div> 
+        <table border="2" width="800" cellspacing="5" cellpadding="5">
+            <tr style="background-color:aquamarine;color:black;text-align:center">
+                <td colspan="2">Welcome</td>
+            </tr>
+            <tr height="300">
+                <td width="250">
+                    <ul>
+                        <li>@Html.ActionLink("Home","Home") </li>
+                        <li>@Html.ActionLink("About","About") </li>
+                        <li>@Html.ActionLink("Contact","Contact")</li>
+                    </ul>
+                </td>
+                <td width="550">
+                    <div style="height:200px">
+                        @RenderBody()
+                    </div>
+                    <div style="height:100px">
+                        @if (IsSectionDefined("adsSection"))
+                        {
+                            @RenderSection("adsSection", required: false)
+                        }
+                        else
+                        {
+                            <div align="center">
+                                <i>Ads here!!1</i>
+                            </div>
+                        }
+                    </div>
+                </td>
+            </tr>
+            <tr style="background-color:aquamarine;color:black;text-align:center">
+                <td colspan ="2">
+                    &copy;copyrights by Anvitha
+                </td>
+            </tr>
+        </table>
+    </div>
+</body> 
+</html>
