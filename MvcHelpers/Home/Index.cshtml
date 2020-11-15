@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @helper MyListHelper(string[] str)
+            {
+                <ul>
+                    @foreach(var item in str)
+                    {
+                        <li>@item</li>
+                    }
+                </ul>
+    
+            }
+    </div>
+    <div>
+        <label>List of Cricketers: </label>
+        <div>@MyListHelper(new string[] { "Sachin","Dhoni","Virat"} )</div>
+    </div>
+    <div>
+        <label>List of Colors: </label>
+        <div>@MyListHelper(new string[] { "White", "violet", "Pink" }) </div>
+    </div>
+    <div>
+        @helper AddHelper(int a,int b)
+            {
+              <label>Addtion of two numbers are :  @(a+b)</label>
+    }
+    </div>
+    <div style="background-color:aqua"><label>
+         @AddHelper(100,200)
+         </label></div>
+</body>
+</html>

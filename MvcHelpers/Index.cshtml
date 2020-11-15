@@ -1,0 +1,31 @@
+﻿@using mvcHelpers.Models
+@model Class1
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <label>Name: @Html.TextBoxFor(x => x.Name)</label>
+        
+        <br /> 
+        <br />
+        <label>Address: @Html.TextBoxFor(x => x.Address)</label>
+        
+        <br />
+        <br />
+        <label>Employee: @Html.CheckBoxFor(x => x.IsEmployee)</label>
+        
+        <label><input type="submit" value="Submit" Text="Yuor details are submitted!" </label>
+        
+    </div>
+</body>
+</html>
